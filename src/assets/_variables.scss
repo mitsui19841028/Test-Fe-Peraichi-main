@@ -1,0 +1,11 @@
+$max-width-app-value: 1280;
+$max-width-app: #{$max-width-app-value}px;
+$padding-side-of-image: 20px;
+$number-of-images: 4;
+$rate-of-leading-text: 0.2;
+$rate-of-image-area: 0.8;
+$percentage-of-leading-text: calc(100% * #{$rate-of-leading-text});
+$percentage-of-image-area: calc(100% * #{$rate-of-image-area});
+$width-image-area: calc(#{$max-width-app-value} * #{$rate-of-image-area} * 1px);
+$margin-each-images: 20px;
+$side-length-of-image: calc(((#{$width-image-area} - calc(#{$padding-side-of-image} * 2)) - #{$margin-each-images} * calc(#{$number-of-images} - 1)) / #{$number-of-images});
